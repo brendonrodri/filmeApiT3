@@ -1,9 +1,30 @@
 import React from "react"
-/* import {Link} from "react-router-dom"
- */
+import styled from "styled-components"
+
+const Container = styled.header`
+    position:fixed;
+    width:100%;
+    height:10vh;
+    background-color: rgba(108,122,137 /1);
+    backdrop-filter: blur(15px);
+
+    ul{
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        height:10vh;
+        
+    }
+
+    a{
+        color:white;
+        font-size:1.3rem;
+    }
+`
+
 export default function Header (){
     return(
-        <header>
+        <Container>
             <nav>
                 <ul>
                     <li>
@@ -17,6 +38,6 @@ export default function Header (){
                     </li>
                 </ul>
             </nav>
-        </header>
+        </Container>
     )
 }
