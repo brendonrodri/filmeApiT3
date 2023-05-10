@@ -31,6 +31,8 @@ import Header from "./components/header/header"
 import Main from "./components/main/main"
 import Series from "./components/series/series"
 import { createGlobalStyle } from "styled-components"
+import CarouselComponent from "./components/carousel/carousel"
+import NavComponent from "./components/NavBar/navbar"
 
 
 const GlobalStyles = createGlobalStyle`
@@ -52,6 +54,8 @@ export default function App (){
       <Header />
       <Main />
       <Filmes />
+      <NavComponent />
+      <CarouselComponent />
       <Series />
       <GlobalStyles />
     </>
