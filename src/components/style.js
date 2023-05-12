@@ -11,11 +11,27 @@ export const Container = styled.section`
 
 export const BoxTitle = styled.div`
 width:100%;
+height:10vh;
+border:solid;
+display:flex;
+justify-content:space-between;
+align-items:center;
 
 h2{
     font-size:1.2rem;
     text-align:center;
 }
+
+img{
+    width:15px;
+    cursor:pointer;
+}
+`
+
+export const Caixa = styled.input`
+display:${props  => props.show};
+
+
 `
 
 export const BoxFilms = styled.section`
